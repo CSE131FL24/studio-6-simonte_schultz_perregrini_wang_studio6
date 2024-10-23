@@ -40,7 +40,7 @@ public class RecursiveMethods {
 	    // Recursive case: reduce the radius by a factor of 3 and draw three smaller circles
 	    double newRadius = radius / 3.0;
 
-	    // Draw circles to the left, right, and directly above the current circle
+	    // Draw circles to the left, right, above, and below the current circle
 	    circlesUponCircles(xCenter - radius, yCenter, newRadius, radiusMinimumDrawingThreshold); // Left
 	    circlesUponCircles(xCenter + radius, yCenter, newRadius, radiusMinimumDrawingThreshold); // Right
 	    circlesUponCircles(xCenter, yCenter + radius, newRadius, radiusMinimumDrawingThreshold); // Above
